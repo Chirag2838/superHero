@@ -44,6 +44,8 @@ const HerosData = function (length, onDone, allDone) {
         }
         this.herosFetched++;
         if(this.herosFetched === this.length) {
+            this.resObj1.rank = 1;
+            this.resObj2.rank = 2;
             this.onDone();
         }
     }
